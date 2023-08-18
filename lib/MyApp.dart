@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:healthittestapp/Dashboard.dart';
-import 'package:healthittestapp/LandingPage.dart';
+import 'package:healthittestapp/SplashScreen.dart';
 
 import 'LoginPage.dart';
 
@@ -26,11 +26,11 @@ class _MyAppState extends State<MyApp> {
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.white
         ),
-        home: LandingPage(),
+        home: SplashScreen(),
         debugShowCheckedModeBanner: false,
       initialRoute: '/Splash',
         routes: {
-          '/Splash': (context) => const LandingPage(),
+          '/Splash': (context) => const SplashScreen(),
           '/Dash': (context)=> const Dashboard(),
           '/Login': (context)=> const Login()
         },
